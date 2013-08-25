@@ -46,8 +46,8 @@ class MutexTest : public Thread
 int main(int argc, char** argv)
 {
     Mutex mutex;
-    MutexTest* test = new MutexTest(mutex);
-    test->start();
+    MutexTest test;
+    test.start();
 
     // give thread a chance to acquire lock first
     sleep(1);
@@ -57,7 +57,7 @@ int main(int argc, char** argv)
     mutex.lock();
     printf("main got mutex lock\n");
     mutex.unlock();
-    test->join();
+    test.join();
     
     exit(0);
 }
