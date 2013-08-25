@@ -27,6 +27,7 @@
 
 class Mutex
 {
+    friend class CondVar;
     pthread_mutex_t  m_mutex;
 
   public:

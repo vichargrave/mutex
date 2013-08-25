@@ -46,7 +46,7 @@ class MutexTest : public Thread
 int main(int argc, char** argv)
 {
     Mutex mutex;
-    MutexTest test;
+    MutexTest test(mutex);
     test.start();
 
     // give thread a chance to acquire lock first
