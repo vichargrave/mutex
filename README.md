@@ -1,6 +1,6 @@
 # mutex
 
-Example source code for the article [_Mutex Class in C++_](http://vichargrave.com/mutex-class-in-c/).
+Example code from my Mutex Class in C++ blog. 
 
 ## Build
 
