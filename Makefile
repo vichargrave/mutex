@@ -9,7 +9,7 @@ TARGET		= mutex
 all: $(SOURCES) $(TARGET)
 
 $(TARGET): $(OBJECTS) 
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+	$(CC) $(OBJECTS) -o $@ $(LDFLAGS) 
 
 .cpp.o:
 	$(CC) $(CFLAGS) $(INCLUDES) $< -o $@
